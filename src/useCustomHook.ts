@@ -5,6 +5,7 @@ const useCustomHook = <T,>(initialValue: T) => {
 
   useEffect(() => {
     console.log("Value changed:", value);
+    console.log("Patched 1")
   }, [value]);
 
   return [value, setValue] as const;
